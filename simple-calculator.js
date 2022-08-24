@@ -18,6 +18,14 @@ function simpleCalcu() {
         return a * b
     }
 
+    function mod() {
+        return a % b
+    }
+
+    function expo() {
+        return a ** b
+    }
+
     let userOption = document.getElementById('option').value
     if (userOption == '1') {
         count = sum(a,b)
@@ -27,6 +35,10 @@ function simpleCalcu() {
         count = div(a,b)
     } else if (userOption == '4') {
         count = mul(a,b)
+    } else if (userOption == '5') {
+        count = mod(a,b)
+    } else if (userOption == '6') {
+        count = expo(a,b)
     } else {
         alert("Please input check your option!")
     }
